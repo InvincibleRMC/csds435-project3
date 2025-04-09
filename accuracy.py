@@ -1,7 +1,8 @@
 from sklearn.metrics import accuracy_score
+from surprise.prediction_algorithms import Prediction
 
 
-def accuracy(predictions, verbose=True):
+def accuracy(predictions: list[Prediction], verbose: bool = True) -> float:
     y_true = []
     y_pred = []
 
